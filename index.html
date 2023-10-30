@@ -1,0 +1,97 @@
+<!--Andrés Delgado Herruzo-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Impacto mediambiental</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <div><img src="imagenes/logo.png" id="logo"></div>
+            <h3>Escuela Virgen de Guadalupe</h3>
+            <div id="contacto"><img src="imagenes/llamada.png" class="iconos"><span>+34 924 25 17 61</span>
+            <img src="imagenes/correo.png" class="iconos"><span>guadalupe@fundacionloyola.es</span></div>
+        </header>
+        <nav>
+            <ul id="botonesul">
+                <li class="botonesli"><a href="index.html">Inicio</a></li>
+                <li class="botonesli"><a id="segundo" href="pagina2.html">Ventas</a></li>
+            </ul>
+        </nav>
+        <main id="fondoimagen">
+            <table>
+                <caption>Países que más habitantes compradores tienen</caption>
+                <tr>
+                    <td id="lista">
+                        <ol>
+                            <li>
+                                Tailandia
+                                <ul>
+                                    <li>66.8%</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Corea Del Sur
+                                <ul>
+                                    <li>65.6%</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Turquía
+                                <ul>
+                                    <li>64.9%</li>
+                                </ul>
+                            </li>
+                            <li>
+                                México
+                                <ul>
+                                    <li>64.5%</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Chile
+                                <ul>
+                                    <li>64.4%</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </td>
+                    <td id="celdaimagen">
+                        <img src="imagenes/ranking.jpg">
+                    </td>
+                </tr>
+            </table>
+            <p>
+                En todos los países mencionados en las lista, el porcentaje de sus habitantes que realizan compras por internet, superan el 60%.<br><br>
+                Esto nos da, unos datos muy preocupantes, ya que la contaminación que se genera por la cantidad de dichos pedidos es enorme.<br><br>
+                Debemos de mentalizarnos en que no se deben de realizar compras online, y comprar más en tiendas físicas.
+            </p>
+            <h2>Déjanos una queja o una sugerencia para mejorar nuestro sitio web</h2>
+            <form method="POST" action="sacardatos.php">
+                <label for="lista">Selecciona una opción:</label><br>
+                <select name="lista"><br>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="queja">Queja</option>
+                </select>
+                <label for="opinion">¿Te ha gustado la página?</label>
+                Si<input type="radio" name="opinion" value="si">
+                No<input type="radio" name="opinion" value="no" class="marginabajo">
+                <label>¿Qué te gustó más?</label>
+                <label for="uno">Página 1</label>
+                <input type="checkbox" name="gusto[]" value="uno">
+                <label for="dos">Página 2</label>
+                <input type="checkbox" name="gusto[]" value="dos" class="marginabajo">
+                <label for="texto">Introduce tu <span>sugerencia/queja:</span></label>
+                <input type="text" name="texto">
+                <input type="checkbox" name="terminos">
+                <label for="terminos">Acepto los términos de privacidad</label>
+                <input type="submit" name="Enviar" required>
+            </form>
+        </main>
+        <footer>
+            Página realizada por Andrés Delgado Herruzo - 2DAW©
+        </footer>
+    </body>
+</html>

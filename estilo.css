@@ -1,0 +1,237 @@
+/*LAYOUT PAGINA*/
+body{
+    background-color: rgb(255, 255, 255);/*Aplicar un color de fondo al css*/
+    padding: 0%;
+    margin: 0%;
+    /*El padding es de 0px en el body, y el margin es de 0px, lo que supone un 0% del contenedor*/
+    color: white;
+    width: 100%;
+    /*width: 1280px*/;
+    /*El body es el elemento padre de todo, por lo que se coge el 100%*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*SE LE APLICARA ESTE TIPO DE LETRA A TODA LA PAGINA*/
+}
+
+header{
+    background-color: rgb(135, 213, 213);
+    font-weight: bold;
+    font-size: large;
+    padding: 0.78125%;
+    width: 98.4375%;
+    /*El header tiene un width de 1260px, y padding por los 4 lados de 10px, su elemento padre es el body*/
+    }
+
+nav{
+    background-color: rgb(39, 120, 191);
+    padding: 1.171875%;
+    width: 97.65625%;
+    /*El nav tiene un width de 1250px, y padding por los 4 lados de 15px, su elemento padre es el body*/
+}
+
+main{
+    background-image: url(imagenes/fondo.jpg);/*SE LE APLICARA UNNA IMAGEN DE FONDO AL MAIN*/
+    width: 100%;
+    padding-bottom: 2.34375%;
+    /*El main tiene un width de 1280px, tiene un padding bottom de 30 px, su elemento padre es el body*/
+}
+
+footer{
+    background-color: black;
+    padding: 2.34375%;
+    /*tiene un padding de 30 px, su elemento padre es el body*/
+    text-align: center;
+}
+
+/*ELEMENTOS HEADER*/
+header>a{
+   float: right;
+}
+
+.iconos{
+    width: 1.5625%;
+    /*su elemento padre es el header, tienen un ancho de 20px*/
+}
+
+#logo{
+    width: 9.765625%;
+    /*su elemento padre es el header, tienen un ancho de 125px*/
+}
+
+header>h3{
+    display: inline;
+    margin-left: 11.71875%;
+    /*su elemento padre es el header, tienen un margen de 150px*/
+}
+header>div{
+    display: inline;
+}
+
+#contacto{
+    width: 39.0625%;
+    margin-left: 11.71875%;
+     /*su elemento padre es el header, tiene un ancho de 500px y un margen izq de 150px*/
+}
+
+#contacto span{
+    padding-left: 0.78125%;
+    padding-right: 0.78125%;
+    /*su elemento padre es el header, tienen una medida de 10px*/
+}
+/*ELEMENTOS DEL NAV*/
+
+nav ul{
+    display: inline;
+    list-style: none;
+    margin-left: 35.015625%;
+    padding: 1.171875%;
+    /*su elemento padre es el nav, tiene un padding de 15px, y un margin left de 450px*/
+}
+
+nav li{
+    display: inline;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0% 1.171875%;
+    /*su elemento padre es el nav, tiene un padding de 15px izq y dcho*/
+}
+
+a:hover{
+    background-color: rgb(46, 67, 204);
+    padding: 1.171875%;
+    /*su elemento padre es el nav, tiene un padding de 15px*/
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#segundo{
+    margin-left: 11.71875%;
+    /*su elemento padre es el nav, tiene un margin-left de 150px*/
+}
+
+
+/*ELEMENTOS DEL MAIN*/
+
+table{
+    margin-left: 20.703125%;
+    margin-right: 20.703125%;
+    margin-bottom: 1.953125%;
+    width: 58.59375%;
+    /*su elemento padre es el main, tiene un width de 750px, margenes a los laterales de 265px, uno inferiorç
+    de 25px*/
+}
+
+caption{
+    padding: 2% 0px;
+    width: 96%;
+    /*su elemento padre es el table, tiene un padding de 15px de vertical y un width de 72opx*/
+}
+
+table td{
+    padding: 2%;
+    /*su elemento padre es el table, tiene un padding de 15px*/
+}
+
+table ol{
+    font-size: x-large;
+}
+
+#lista{
+    width: 26.666666666666666666666666666667%;
+    /*su elemento padre es el table, tiene un width de 200px*/
+}
+
+#celdaimagen{
+    width: 65.333333333333333333333333333333%;
+    /*su elemento padre es el table, tiene un width de 490px*/
+}
+
+#celdaimagen img{
+    width: 100%;
+    /*la imagen ocupa el 100% de la celda en la que se encuentra**/
+}
+
+p{
+    background-color:rgb(87, 108, 108);
+    width: 62.5%;
+    margin-left: 16.40625%;
+    margin-right: 16.40625%;
+    padding: 2.34375%;
+    margin-bottom: 3.90625%;
+    /*su elemento padre es el main, tiene un width de 800px, un margin izq y dcho de 210px
+    un paddind de 30px y un marge por abao de 50px*/
+}
+
+
+h2{
+    text-align: center;
+    width: 58.59375%;
+    padding-left: 0.78125%;
+    padding-right: 0.78125%;
+    margin-left: 19.921875%;
+    margin-right: 19.921875%;
+    /*su elemento padre es el main, tiene un width de 750px, un margin izq y dcho de 255px
+    un padding izq y dcho de 10px*/
+}
+
+form{
+    background-color: rgb(39, 120, 191);
+    width: 31.25%;
+    margin: 0% 30.46875%;
+    padding: 0.78125% 3.90625%;
+    text-align: center;
+    /*su elemento padre es el main, tiene un width de 400px, un margin izq y dcho de 390px
+    un padding arriba y abajo de 10px e izq y dcho de 50px*/
+}
+
+label{
+    width: 100%;
+    display:inline-block;
+    /*su elemento padre es el form, tiene un width de 400px*/
+}
+
+select{
+    margin-bottom: 10%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*su elemento padre es el form, tiene un width de 200px,
+    un margen por abajo de 40px, y un magin por los laterales de 100px*/
+}
+
+input{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*su elemento padre es el form, tiene un width de 200px,
+    y un margin por los laterales de 100px*/
+}
+
+input[type="text"]{/*CAMBIA EL DISEÑO DEL BOTON DE ENVIAR*/
+    padding: 0% 0,00390625%;
+    /*su elemento padre es el form, tiene 5px padding laterales y width de 190px*/
+}
+
+input[type="submit"]{/*CAMBIA EL DISEÑO DEL BOTON DE ENVIAR*/
+    background-color: rgb(5, 33, 63); 
+    color: white;
+    border: none;
+    padding: 3.75% 5%;
+    font-size: 18px;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    /*su elemento padre es el form, tiene 15px padding superior e inferior, y 20px de laterales y width de 100px, y margenes laterales de 150px*/
+    
+}
+
+span{
+    font-style: italic;/*EL CONTENIDO DEL SPAN SE PONDRA EN CURSIVA*/
+}
+
